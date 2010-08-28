@@ -57,6 +57,7 @@ class Core {
 	function __construct($settings_path) {
 		$this->settings = new Configuration($settings_path);
 		$this->resolver = new Resolver($this->settings->URL_MODULE, $this->settings->PROJECT_ROOT);
+		date_default_timezone_set($this->settings->TIMEZONE);
 	}
 	
 	function serve() {

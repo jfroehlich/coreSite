@@ -2,5 +2,5 @@
 
 
 $urls->merge(array(
-	//'=^myapp/=' => array('site.module.method', array()),
+	//'=^myapp/$=' => array('site.myapp.views.example_view', array()),
 ));
