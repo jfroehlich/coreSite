@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !(media|admin)/
+RewriteRule .* index.php
+
+# media folder
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^media/(.*)$ media/$1
+
+# every request to admin goes to admin/admin.php
+#RewriteRule ^admin/(.*)$ applications/admin/admin.php
