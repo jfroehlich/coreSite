@@ -1,10 +1,10 @@
-
 Core Site
 ==============================================================================
 
 A very small web framework to make php coding easier. When I was annoyed about
 PHPs "disabilities" last weekend, I wrote this little framework. It's useful
-when you need to make a little service on a host where no python is available.
+when you need to make a little service on a host where no python and django 
+are available.
 
 ## Requirements
 
